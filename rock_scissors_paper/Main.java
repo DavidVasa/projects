@@ -20,5 +20,6 @@ public class Main {
 
         if (botChoice.equals(userChoice))
             System.out.println("Draw");
+
     }
 }
