@@ -21,6 +21,9 @@ public class Main {
 
 if (botChoice.equals(userChoice)) System.out.println("Draw");
 
+else if (userChoice.equals("rock")&&botChoice.equals("scissors") || userChoice.equals("paper")&&botChoice.equals("rock") || userChoice.equals("scissors")&&botChoice.equals("paper")) 
+system.out.println("You won!");
 
+else system.out.println("You lost. The bot chose" + botChoice);
     }
 }
