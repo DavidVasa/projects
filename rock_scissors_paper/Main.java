@@ -15,8 +15,12 @@ public class Main {
         while (!Arrays.asList(options).contains(userChoice = userInput.nextLine())) {
             System.out.println("You misspelled the choice! Try again bastard!");
         }
-        int randomNumber = random.nextInt(3);
+        int randomNumber = random.nextInt(1);
         String botChoice = options[randomNumber];
+
+
+if (botChoice.equals(userChoice)) System.out.println("Draw");
+
 
     }
 }
