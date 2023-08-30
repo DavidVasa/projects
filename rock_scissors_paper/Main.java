@@ -18,9 +18,7 @@ public class Main {
         int randomNumber = random.nextInt(1);
         String botChoice = options[randomNumber];
 
-
-if (botChoice.equals(userChoice)) System.out.println("Draw");
-
-
+        if (botChoice.equals(userChoice))
+            System.out.println("Draw");
     }
 }
