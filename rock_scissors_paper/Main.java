@@ -1,9 +1,6 @@
 package rock_scissors_paper;
 
 import java.util.Scanner;
-
-import javax.print.DocFlavor.READER;
-
 import java.util.Arrays;
 import java.util.Random;
 
