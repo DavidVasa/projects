@@ -6,16 +6,15 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        Random random = new Random();
         String[] options = { "rock", "paper", "scissors" };
-        Scanner userInput = new Scanner(System.in);/*
-                                                    * while (!Arrays.asList(options).contains(userInput.nextLine())) {
-                                                    * userInput.nextLine();
-                                                    * }
-                                                    */
-        for (int i = 0; i < 10; i++) {
-            Random random = new Random();
-            int botChoice = random.nextInt(3);
-            System.out.println(botChoice);
+        Scanner userInput = new Scanner(System.in);
+        while (!Arrays.asList(options).contains(userInput.nextLine())) {
+            userInput.nextLine();
         }
+
+        int randomNumber = random.nextInt(3);
+        String botChoice = options[randomNumber];
+
     }
 }
