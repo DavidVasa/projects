@@ -3,6 +3,8 @@ package dungeon_game;
 public class Main {
     public static void main(String args[]) {
         MapGeneration mapSize = new MapGeneration(30, 10);
+        ObstacleGeneration obstacleMap = new ObstacleGeneration(mapSize);
+        obstacleMap.createObstacle(10);
         String[][] map = mapSize.createMap();
         map[3][4] = "*";
         for (int i = 0; i < mapSize.sizeY; i++) { // Notice the change here from sizeX to sizeY
